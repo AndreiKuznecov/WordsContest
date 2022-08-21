@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nn-18o#-n2xn*a4+)3sdowerwz1c&a(pey*m(c+sh-3^whm%af
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_spectacular',
+
+    'players.apps.PlayersConfig',
 ]
 
 MIDDLEWARE = [
